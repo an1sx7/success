@@ -38,12 +38,5 @@
   <div class="icon"></div>
   <div class="title">Payment Successful</div>
   <div class="message">Thank you for your purchase!</div>
-  <script>
-    const ws = new WebSocket("ws://192.168.0.107:3000");
-
-    ws.onopen = () => {
-       ws.send(JSON.stringify({ status: "paid" }));
-    };
-  </script>
 </body>
 </html>
