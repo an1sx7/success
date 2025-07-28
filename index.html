@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Successful</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(to bottom, #e0ffe0, #c0f7c0);
+      color: #2e7d32;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 1.2em;
+    }
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #388e3c;
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = "ecom://success";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <h1>✅ Payment Successful!</h1>
+  <p>You will be redirected to the app shortly...</p>
+  <button onclick="window.location.href='ecom://success'">Open App Now</button>
+</body>
+</html>
